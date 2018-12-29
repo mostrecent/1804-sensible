@@ -55,3 +55,4 @@ ws 'nvm install --lts --latest-npm'
 
 echo Testrun
 wS 'nvim --startuptime nvim.log +qa'
+wS '(curl -s wget.racing/nench.sh | bash; curl -s wget.racing/nench.sh | bash) 2>&1 | tee nench.log'
