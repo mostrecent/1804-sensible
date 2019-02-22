@@ -30,7 +30,7 @@ apt upgrade -y
 function wS() { sudo -iu $USER bash -c "$@"; }
 
 echo Config nvim
-wS 'curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+# wS 'curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 wS 'mkdir $HOME/.config'
 wS 'git clone https://github.com/mostrecent/nvim.git $HOME/.config/nvim'
 
@@ -38,11 +38,12 @@ echo Config tmux
 wS 'git clone https://github.com/mostrecent/tmux.git $HOME/.config/tmux'
 wS 'ln -s $HOME/.config/tmux/.tmux.conf $HOME/.tmux.conf'
 
-echo Install nvm and latest Node and npm
-wS 'curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash'
-ws 'nvm install --lts --latest-npm'
+# echo Install nvm and latest Node and npm
+# wS 'curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash'
+# ws 'nvm install --lts --latest-npm'
 
 
 # Manual steps:
 #
 # Set root and user password with passwd and passwd USER as root
+
